@@ -2,16 +2,17 @@
 <html lang="en">
   <head>
     <title>Guessing Game</title>
-    <!-- Bootstrap and CSS here-->
+
+    <!--my CSS -->
     <link rel='stylesheet' type='text/css' href='../css/main.css'>
-
-
+    <!--Bootstrap -->
+    <link rel='stylesheet' type='text/css' href='../css/bootstrap/css/bootstrp.css'>
 
   </head>
   <body>
-    <div id='app'>
+    <div id='app' class='center'>
 
-      <div id='headers' class='center'>
+      <div id='headers'>
         <!-- Title and subtitles! -->
         <h1>Guessing Game</h1>
         <h2>Guess a number between 1~100</h2>
@@ -21,18 +22,18 @@
 
         <div id='input-parent'>
           <!-- Player's guess input, and submit button -->
-          <input id='inputbox' placeholder='Your number!' maxlength=3 autofocus=autofocus>
+          <input id='input-box' placeholder='Your number!' maxlength=3 autofocus=autofocus>
           <button id='submit'>Try!</button>
         </div>
 
         <div id='guesses'>
-          <ul class='guess'>
+          <ul class='guess-list'>
           <!-- unordered list of guesses -->
-            <li>-</li>
-            <li>-</li>
-            <li>-</li>
-            <li>-</li>
-            <li>-</li>
+            <li class='guess'>-</li>
+            <li class='guess'>-</li>
+            <li class='guess'>-</li>
+            <li class='guess'>-</li>
+            <li class='guess'>-</li>
           </ul>
         </div>
 
