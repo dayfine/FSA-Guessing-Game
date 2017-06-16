@@ -72,19 +72,19 @@ describe("Game class", function() {
                 game.winningNumber = 30;
                 expect(game.difference()).toEqual(10);
             })
-            
+
         });
 
         describe('isLower function', function() {
             it('returns true if the playersGuess is lower than winningNumber, and false if not.', function() {
                 game.playersGuess = 20;
-                game.winningNumber = 10; 
+                game.winningNumber = 10;
                 expect(game.isLower()).toEqual(false);
                 game.winningNumber = 30;
                 expect(game.isLower()).toEqual(true);
             })
         });
-        
+
         describe("playersGuessSubmission function", function() {
             it('takes a number as an argument and sets that as playersGuess', function() {
                 game.playersGuessSubmission(42);
@@ -109,7 +109,7 @@ describe("Game class", function() {
                 game.playersGuessSubmission(42);
                 expect(Game.prototype.checkGuess).toHaveBeenCalled();
             })
-            
+
         })
 
         describe("checkGuess function", function() {
@@ -159,7 +159,7 @@ describe("Game class", function() {
                 game.winningNumber = 42;
                 expect(game.playersGuessSubmission(92)).toEqual('You\'re ice cold!');
             });
-            
+
         })
 
         describe('newGame function', function() {
