@@ -7,6 +7,8 @@ ctx.globalCompositeOperation = 'lighter';
 
 var letterDrops = ['0','1','0','1','0','1','0','1','0','1','0','1','0','1','0','1','0','1','0','1','0','1','0','1','0','1','诸','神','集','新','世','夜','明','虎','鸫','啼','花','开','向','神','祈','浮','生','空','自','哀','梦','逝','恨','飘','零']
 
+//var letterDrops = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+
 var drops =[];
 for (var i = 0; i < 72; i++) {
   var newdrop = new Drop()
@@ -36,7 +38,7 @@ function generaText(){
 }
 
 function drawDrop(x, y, size, arrString){
-  ctx.fillStyle='#1153CE'
+  ctx.fillStyle='#4AD8F1'
   for (var i = 0; i < arrString.length; i++) {
     ctx.fillText(arrString[i], x, y-i*size)
   }
@@ -44,12 +46,12 @@ function drawDrop(x, y, size, arrString){
 
 function draw() {
   ctx.clearRect(0, 0, canvasW, canvasH)
-  //ctx.shadowOffsetX = ctx.shadowOffsetY = 0
-  //ctx.shadowBlur = 10
-  //ctx.shadowColor = '#1b8193'
+  ctx.shadowOffsetX = ctx.shadowOffsetY = 0
+  ctx.shadowBlur = 10
+  ctx.shadowColor = '#1b8193'
 
   for (var k = 0; k < drops.length; k++) {
-    ctx.font = drops[k].size+'px Matrix Code'
+    ctx.font = drops[k].size+'px MatrixCode'
     ctx.textBaseline = 'top'
     ctx.textAlign = 'center'
     if (drops[k].y > canvasH+drops[k].size*drops[k].arrString.length) {
