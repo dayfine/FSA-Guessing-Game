@@ -3,23 +3,23 @@
   <head>
     <title>Guessing Game</title>
     <link rel='stylesheet' type='text/css' href='../css/main.css'>
-    <link rel='stylesheet' type='text/css' href='../css/bootstrap/css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' href='../css/bootstrap.css'>
     <!--meta name='viewport' contnet='width=device-width, initial-scale=1'-->
     <meta charset="UTF-8">
   <body>
-    <canvas id='mybackgournds'></canvas>>
-    <div id='app' class='center'>
+
+    <div id='app' class='center container'>
 
       <div id='headers'>
-        <h1>Guessing Game</h1>
-        <h2>Guess a number between 1~100</h2>
+        <h1>Take a Guess...</h1>
+        <h3>on All Random Things!<br>
+        Guess a number between 1~100</h3>
       </div>
 
-      <div id='main' class='center'>
-
+      <div id='main'>
         <div id='input-parent'>
           <input id='input-box' placeholder='Your number!' maxlength=3 autofocus=autofocus>
-          <button id='submit'>Try!</button>
+          <button id='submit'>Go!</button>
         </div>
 
         <div id='guesses'>
@@ -44,20 +44,24 @@
     <div id='footer'>
       <div class='row center'>
 
-        <div class='img'>
+        <div class='col-sm-4'>
           <img src='fa-logo@2x.png'></img>
         </div>
 
-        <div class=''>
-          <h4>Project by Di Davey Fan</h4>
+        <div class='col-sm-4'>
+          <h4>
+          Project by <a href="">Di Davey Fan</a><br>
+          <a href="https://github.com/dayfine/FSA-Guessing-Game">Github</a>
+          </h4>
         </div>
 
-        <div class='img'>
+        <div class='col-sm-4'>
           <img src='grace_hopper_academy.png'></img>
         </div>
 
       </div>
     </div>
-    <script type="text/javascript" src='../js/effect.js'></script>>
+    <canvas id='mybackgournds'></canvas>
+    <script type="text/javascript" src='../js/effect.js'></script>
   </body>
 </html>

@@ -13,8 +13,18 @@
       font-size: 60px;
     }
 
-    body {
+    .sig {
+      //flex-grow: 4;
+    }
 
+
+    body, html {
+      height:100%;
+    }
+
+    body {
+      height:100%;
+      background-color: black;
     }
 
     ul {
@@ -23,21 +33,23 @@
     }
 
     img {
-      display: inline;
-      width: 40%;
-      margin: 0 auto;
+      height: 100px;
     }
 
     canvas {
-      position: fixed;
+      position:absolute;
       top: 0;
-      left: 0;
+      left:0;
+      width:100%;
+      height:100%;
+      background-color: black;
     }
 
     #input-parent {
       width: 160px;
       margin: 0 auto;
       position: relative;
+      z-index: 2;
     }
 
     #input-box {
@@ -65,10 +77,12 @@
       background-color: white;
       position: fixed;
       bottom: 0;
+      z-index: 1;
     }
 
     #app {
       width: 60%;
       margin: 50px auto;
-      //background: rgba(256,256,256,0.1)
+      background: rgba(256,256,256,0.5)
+
     }
