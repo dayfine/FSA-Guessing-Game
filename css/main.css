@@ -14,8 +14,14 @@
       font-size: 60px;
     }
 
-    @font-face{font-family:"MatrixCode";
+    @font-face{
+      font-family:"MatrixCode";
       src:url('../html/matrix_code_nfi.ttf');
+    }
+
+    @font-face{
+      font-family:"ZhengBanQiao";
+      src:url('../html/zbq.ttf');
     }
 
 
