@@ -16,12 +16,12 @@
 
     @font-face{
       font-family:"MatrixCode";
-      src:url('../html/matrix_code_nfi.ttf');
+      src:url('../assets/matrix_code_nfi.ttf');
     }
 
     @font-face{
       font-family:"ZhengBanQiao";
-      src:url('../html/zbq.ttf');
+      src:url('../assets/zbq.ttf');
     }
 
 
