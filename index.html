@@ -4,6 +4,7 @@
     <title>Guessing Game</title>
     <link rel='stylesheet' type='text/css' href='./css/main.css'>
     <link rel='stylesheet' type='text/css' href='./css/bootstrap.css'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <!--meta name='viewport' contnet='width=device-width, initial-scale=1'-->
     <meta charset="UTF-8">
   <body>
@@ -11,19 +12,22 @@
     <div id='app' class='center container'>
 
       <div id='headers'>
-        <h1>Take a Guess...</h1>
-        <h3>on All Random Things!<br>
-        Guess a number between 1~100</h3>
+        <h2 id='title'>Take a Guess...</h2>
+        <h4 id='subtitle'>on All Random Things!<br>
+        Guess a number between 1~1000</h4>
       </div>
 
       <div id='main'>
         <div id='input-parent'>
-          <input id='input-box' placeholder='Your number!' maxlength=3 autofocus=autofocus>
+          <input id='input-box' placeholder='Your number!' maxlength=4 autofocus=autofocus>
           <button id='submit'>Go!</button>
         </div>
 
         <div id='guesses'>
-          <ul class='guess-list'>
+          <ul class='guess-list row'>
+            <li class='guess'>-</li>
+            <li class='guess'>-</li>
+            <li class='guess'>-</li>
             <li class='guess'>-</li>
             <li class='guess'>-</li>
             <li class='guess'>-</li>
@@ -33,8 +37,8 @@
         </div>
 
         <div id='menu-btns'>
-          <button>Reset</button>
-          <button>Hint</button>
+          <button id='reset'>Reset</button>
+          <button id='hint'>Hint</button>
         </div>
 
       </div>
@@ -63,5 +67,7 @@
     </div>
     <canvas id='mybackgournds'></canvas>
     <script type="text/javascript" src='./js/effect.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src='./js/game.js'></script>
   </body>
 </html>

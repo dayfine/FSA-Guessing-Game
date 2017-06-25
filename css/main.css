@@ -11,7 +11,8 @@
 
     .guess {
       display: inline;
-      font-size: 60px;
+      min-width: 45px;
+      font-size: 25px;
     }
 
     @font-face{
@@ -23,7 +24,6 @@
       font-family:"ZhengBanQiao";
       src:url('../assets/zbq.ttf');
     }
-
 
     body, html {
       height:100%;
@@ -52,7 +52,6 @@
       width: 160px;
       margin: 0 auto;
       position: relative;
-
     }
 
     #input-box {
@@ -60,7 +59,8 @@
       border: 1px solid white;
       height: 150px;
       width:150px;
-      font-size: 50px;
+      font-size: 25px;
+      text-align: center;
     }
 
     #submit {
@@ -70,9 +70,7 @@
       left: 100px;
       height: 50px;
       width: 50px;
-      //font-size: 50px;
     }
-
 
     #footer {
       width: 100%;
@@ -80,10 +78,15 @@
       background-color: white;
       position: fixed;
       bottom: 0;
+      font-family: 'Open Sans';
     }
 
     #app {
-      width: 60%;
-      margin: 50px auto;
-      background: rgba(256,256,256,0.1)
+      width: 40%;
+      min-width: 360px;
+      margin: 30px auto;
+      background: rgba(256,256,256,0.5);
+      color: rgb(20,20,20);
+      font-family: 'Open Sans';
+      font-weight: 500;
     }

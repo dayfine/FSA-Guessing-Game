@@ -38,8 +38,8 @@ Drop.prototype.drawDrop = function(context){
 function draw() {
   ctx.clearRect(0, 0, canvasW, canvasH)
   ctx.shadowOffsetX = ctx.shadowOffsetY = 0
-  ctx.shadowBlur = 10
-  ctx.shadowColor = '#ffffff'
+  ctx.shadowBlur = 15
+  ctx.shadowColor = '#dddddd'
 
   for (var k = 0; k < drops.length; k++) {
     ctx.font = drops[k].chrSize+'px ZhengBanQiao' //this is definitely too much
