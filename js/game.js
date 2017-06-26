@@ -117,7 +117,5 @@ $(document).ready(function(){
       $('#hint, #submit').prop("disabled",false);
      HINTED = false
   })
-
-
 })
 
