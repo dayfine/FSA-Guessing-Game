@@ -1,4 +1,5 @@
 var GUESS_ALLOWED = 7
+var HINTED = false
 
 var generateWinningNumber = function() {
    return Math.floor(Math.random()*1000)+1
@@ -99,12 +100,13 @@ $(document).ready(function(){
   })
 
   $('#hint').click(function() {
+    if (HINTED) break
     var hints = game.provideHint()
     $('#title').text('The winning number is '+hints[0]+
       ', '+hints[1]+', '+hints[2]+', or '+hints[3]);
     $('#subtitle').text('You can guess at most two more times')
     GUESS_ALLOWED = Math.min(GUESS_ALLOWED, game.pastGuesses.length + 2)
-    $('#hint').prop("disabled",true)
+    HINTED = true
   })
 
   $('#reset').click(function() {
