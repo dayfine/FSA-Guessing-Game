@@ -104,7 +104,7 @@ $(document).ready(function(){
       ', '+hints[1]+', '+hints[2]+', or '+hints[3]);
     $('#subtitle').text('You can guess at most two more times')
     GUESS_ALLOWED = Math.min(GUESS_ALLOWED, game.pastGuesses.length + 2)
-    this.prop("disabled",true)
+    $('#hint').prop("disabled",true)
   })
 
   $('#reset').click(function() {
