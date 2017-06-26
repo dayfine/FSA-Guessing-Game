@@ -100,7 +100,7 @@ $(document).ready(function(){
   })
 
   $('#hint').click(function() {
-    if (HINTED) break
+    if (HINTED) return
     var hints = game.provideHint()
     $('#title').text('The winning number is '+hints[0]+
       ', '+hints[1]+', '+hints[2]+', or '+hints[3]);
@@ -115,6 +115,7 @@ $(document).ready(function(){
       $('#subtitle').html('on All Random Things!<br>Guess a number between 1~1000')
       $('.guess').text('-');
       $('#hint, #submit').prop("disabled",false);
+     HINTED = false
   })
 
 
